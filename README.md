@@ -1,6 +1,6 @@
-<h1 align="center">
+<h2 align="center">
 	One click Native Mobile APP automation | Appium-Java-Cucumber
-</h1>
+</h2>
 
 
 # AppiumCucumber
@@ -12,7 +12,7 @@ $ `git clone https://github.com/SrinivasanTarget/AppiumCucumber.git `
 
 $ `mvn clean install`
 
-_For other like me who learnt from miskates and researcher and then finally made it here: Dont forget to read and Floow this_
+_For other like me who learnt from mistake and researcher and then finally made it here: Dont forget to read and Floow this_
 
 ## Pre-requisites (before you do that 1 click)
 * Android tool :https://developer.android.com/studio#Other (make sure you have /platform-tools and /tools having `adb.exe`)
@@ -24,15 +24,7 @@ _For other like me who learnt from miskates and researcher and then finally made
 
 ## Project Structure
 
-![image](./wiki/images/projStructure_v0.0.1JPG.JPG)
-
-
-
-* Configuration package - Hooks and API Processor
-* Runners - Cucumber Runner Test
-* Screens - Page Classes with Page Actions defined
-* Step Definitions - Screen and its Steps Defs.
-* Features - cucumber features
+![image](./wiki/images/projStructure_v0.0.2JPG.JPG)
 
 
 

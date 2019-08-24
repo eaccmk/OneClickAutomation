@@ -35,7 +35,7 @@ researched and then finally made it please flow this first**
 
 ## Project Structure
 
-![image](./wiki/images/projStructure_v0.0.2JPG.JPG)
+![image](./wiki/images/projStructure.JPG)
 
 
 

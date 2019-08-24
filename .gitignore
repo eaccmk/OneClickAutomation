@@ -1,6 +1,7 @@
 # Project Specific
 target/
 .idea/
+.idea/workspace.xml
 
 todo.txt
 

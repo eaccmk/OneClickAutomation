@@ -5,15 +5,16 @@
 _______________________________
 
 # One Click Automation
-Sample one click mobile app 
+Simple one click mobile app Automation 
+
 - Automation using Java , maven and Cucumber 
-- run by Appium (CLI) 
-- runs on both Windows and Mac
-- runs on iOS and AndroidOS
+- run by Appium (CLI) `npm install -g appium`
+- works on both Windows and Mac
+- works on iOS and AndroidOS devices
 
 ## Running the Test
 
-(_for those you are all set and tested appium cli in past_)
+(_for those who had tested appium  on cli in past go its is this simple_)
 > $ `git clone https://github.com/eaccmk/OneClickAutomation.git `
 
 > $ `sh run_test.sh`

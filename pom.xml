@@ -20,6 +20,7 @@
         <cucumber.version>4.5.4</cucumber.version>
         <!-- appium -->
         <io.appium.java-client.version>5.0.0-BETA9</io.appium.java-client.version>
+        <selenium-support.version>3.141.59</selenium-support.version>
         <!-- others -->
         <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
         <org.json.json.version>20180813</org.json.json.version>
@@ -69,6 +70,14 @@
             <artifactId>java-client</artifactId>
             <version>${io.appium.java-client.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>${selenium-support.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>

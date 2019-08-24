@@ -1,17 +1,27 @@
+/**
+ * @author: https://github.com/eaccmk
+ * */
+
 package com.test.Stepdefinitions;
 
-import com.test.AppFunctions.Functionality;
-import  cucumber.api.java.en.Given;
+import com.test.Functions.AppFunctions;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
 
-public class SearchSteps {
+public class CalculateSteps {
 
-    Functionality  functionalityObj = new Functionality();
+    private AppFunctions appFunctions = new AppFunctions();
 
 
-    @Given("^User is on Search Screen$")
-    public void addition() {
-        System.out.println("I am Inside feature file");
-//        functionalityObj.addition();
+    @Given("User delete's the old values")
+    public void user_deletes_the_old_values() {
+        System.out.println("I am Inside addition()");
+        appFunctions.del();
     }
 
+    @Given("^User adds \"([^\"]*)\" with \"([^\"]*)\"$")
+    public void userAddsWith(String arg0, String arg1) throws Throwable {
+        appFunctions.add(arg0, arg1);
+        throw new PendingException();
+    }
 }

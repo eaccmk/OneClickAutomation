@@ -4,17 +4,41 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.test</groupId>
-    <artifactId>AppiumCucumber</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>com.eaccmk</groupId>
+    <artifactId>OneClickAutomation</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+<!-- Keep pom tidy by keeping version of all plugins here  -->
+<!-- Lets keep the format simple: <artifactId.version> -->
+    <properties>
+        <!-- maven -->
+        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <mvn-configuration.version>1.8</mvn-configuration.version>
+
+        <!-- cucumber -->
+        <!-- We keep once version so that whenever we update this we would update all dependent artifacts with same version  -->
+        <cucumber.version>4.5.4</cucumber.version>
+        <!-- appium -->
+        <io.appium.java-client.version>5.0.0-BETA9</io.appium.java-client.version>
+        <!-- others -->
+        <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
+        <org.json.json.version>20180813</org.json.json.version>
+        <org.junit.jupiter.version>5.4.2</org.junit.jupiter.version>
+        <com.github.lalyos.jfiglet.version>0.0.8</com.github.lalyos.jfiglet.version>
+
+
+    </properties>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${mvn-configuration.version}</source>
+                    <target>${mvn-configuration.version}</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -24,50 +48,51 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>3.0.2</version>
+            <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
         <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>3.0.3</version>
-            <scope>test</scope>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
-            <groupId>com.googlecode.json-simple</groupId>
-            <artifactId>json-simple</artifactId>
-            <version>LATEST</version>
-        </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20090211</version>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
+            <version>${cucumber.version}</version>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-        <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>5.0.0-BETA9</version>
+            <version>${io.appium.java-client.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>${com.googlecode.json-simple.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${org.json.json.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${org.junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+          <dependency>
+            <groupId>com.github.lalyos</groupId>
+            <artifactId>jfiglet</artifactId>
+            <version>${com.github.lalyos.jfiglet.version}</version>
         </dependency>
     </dependencies>
 </project>

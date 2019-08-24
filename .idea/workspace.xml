@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b745ebdb-8162-42a3-95af-839f44765742" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/AppObjects/ObjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/AppObjects/ObjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/CommanLibrary/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/CommanLibrary/Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Configurations/DeviceSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Configurations/DeviceSetUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Functions/AppFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Functions/AppFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Functions/NonAppFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Functions/NonAppFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Runners/Initialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Runners/Initialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Runners/RunCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Runners/RunCukesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Stepdefinitions/CalculateSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Stepdefinitions/CalculateSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/FigletHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/FigletHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/JavaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/JavaUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/addition.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/addition.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/Runners/RunCukesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/Runners/RunCukesTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -165,45 +151,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="JPG" value="1" />
           <entry key="gitignore" value="1" />
+          <entry key="md" value="1" />
           <entry key="png" value="2" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="2" />
+          <entry key="Image" value="3" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="4" />
+          <entry key="gitignore" value="5" />
+          <entry key="md" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Markdown" value="13" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/test/Runners/Initialization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/test/Utils/JavaUtils.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -258,10 +236,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="51">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="136">
+                <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wiki/images/projStructure_v0.0.1JPG.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -362,7 +357,6 @@
         <option value="$PROJECT_DIR$/new.sh" />
         <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/src/test/java/com/test/AppFunctions/Functionality.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/run_test.sh" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -379,6 +373,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/addition.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/test/Stepdefinitions/CalculateSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/test/Functions/AppFunctions.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -460,7 +455,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566618625835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566619929375" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -618,8 +613,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="816" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902534" visible="true" weight="0.27588996" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902534" visible="true" weight="0.3487055" />
       <window_info id="Structure" order="1" sideWeight="0.50097466" side_tool="true" weight="0.2880259" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -633,7 +629,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32924962" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.73792094" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.48901904" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -737,24 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki/images/projStructure_v0.0.1JPG.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="25" selection-start-line="25" selection-end-line="25" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -896,10 +874,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wiki/images/projStructure_v0.0.1JPG.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>

@@ -1,11 +1,16 @@
-package com.test.AppFunctions;
+/**
+ * @author: https://github.com/eaccmk
+ * */
 
-public class AppFunctions {
-    public void add(){
-        int val1 = 9;
-        int val2 = 12;
-        int sum = val1 + val2;
+package com.test.AppObjects;
 
-    }
+import io.appium.java_client.MobileBy;
+import org.openqa.selenium.By;
+
+public class ObjectRepository {
+
+    //Android native Calculator App Objects
+    public By delete = new MobileBy.ByAccessibilityId("Delete");
+    public By one = By.id("com.google.android.calculator:id/digit_1");
 
 }

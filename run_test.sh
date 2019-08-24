@@ -210,9 +210,12 @@ fi
 }
 
 main(){
+echo ""
+echo ""
 echo "========================"
 echo "     Author : eaccmk    "
 echo "========================"
+echo ""
 echo ""
 	stop_appium_servers
 	count_ALL_DEVICES

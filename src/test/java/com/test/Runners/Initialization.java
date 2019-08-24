@@ -1,28 +1,55 @@
+/**
+ * @author: https://github.com/eaccmk
+ * */
+
 package com.test.Runners;
 
-//import cucumber.api.CucumberOptions;
-//import cucumber.api.junit.Cucumber;
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
+import cucumber.api.event.EventHandler;
+import cucumber.api.event.EventPublisher;
+import cucumber.api.event.TestRunStarted;
+import cucumber.api.event.TestRunFinished;
+import cucumber.api.formatter.Formatter;
 
-import com.test.Configurations.SetUpDeviceAndCapabilities;
+import org.springframework.scheduling.annotation.EnableAsync;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(
-        monochrome = true,
-        plugin = {"pretty", "html:target/cucumberHtmlReport","Runner.Initialization"},
-        features = "src/test/resources/features/",
-        glue = {"com.test.Stepdefinitions"})
+import com.test.Configurations.DeviceSetUp;
+import com.test.Functions.NonAppFunctions;
+import com.test.Utils.FigletHelper;
 
-public class RunCukesTest {
-    SetUpDeviceAndCapabilities s = new SetUpDeviceAndCapabilities();
+@EnableAsync
+public class Initialization implements Formatter {
+    private DeviceSetUp device = new DeviceSetUp();
+    private FigletHelper figletHelper = new FigletHelper();
+    private NonAppFunctions nonAppFunctions = new NonAppFunctions();
 
-    @BeforeClass
-    private void setUpDeviceForRun() {
-        s.setUpDevice();
+private EventHandler<TestRunStarted> setup = event -> {
+
+    // clear previous run data
+    nonAppFunctions.clearFilesBeforeStart(); // cleaning old screen shots before starting the test
+
+    device.setUpDevice();
+
+    figletHelper.figletPrint("ALL SET 2 Go.. !");
+};
+    
+
+private EventHandler<TestRunFinished> teardown = event -> {
+
+    figletHelper.figletPrint("Finishing this test Run.. !");
+    if(DeviceSetUp.driver.toString().contains("null")) {
+        System.out.print("All Device Driver's are closed ");
+    } else {
+        System.out.print("Still the Device Driver's is running..");
+        DeviceSetUp.driver.quit();
+//        device.driver = null;  //optional to set the instance of this driver = null
+
     }
 
-
+};
+    
+    @Override
+    public void setEventPublisher(EventPublisher eventPublisher) {
+        eventPublisher.registerHandlerFor(TestRunStarted.class,setup);
+        eventPublisher.registerHandlerFor(TestRunFinished.class,teardown);
+    }
 }

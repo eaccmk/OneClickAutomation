@@ -1,8 +1,10 @@
+/**
+ * @author: https://github.com/eaccmk
+ * */
+
 package com.test.Configurations;
 
 import com.test.Utils.JavaUtils;
-import cucumber.api.java.After;
-import io.cucumber.java.Before;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -14,47 +16,44 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-public class SetUpDeviceAndCapabilities {
+public class DeviceSetUp {
 
     public static DesiredCapabilities caps = new DesiredCapabilities();
-    JavaUtils javaUtilsObject = new JavaUtils();
+    private JavaUtils javaUtilsObject = new JavaUtils();
 
-    String PathToTestAppApk = ".\\src\\test\\resources\\TestApp\\MyApp.apk";
-    String iosApp  = ".\\src\\test\\resources\\TestApp\\MyApp.ipa";
-
- /*   String device_UDID = System.getProperty("_udid");
-    String device_port = System.getProperty("_port");
-    String device_wda = System.getProperty("_wda");*/
+    String androidAppApk = ".\\src\\test\\resources\\TestApp\\MyApp.apk";
+    String iosAppIpa  = ".\\src\\test\\resources\\TestApp\\MyApp.ipa";
 
     String device_UDID = System.getProperty("_udid");
     String device_port = System.getProperty("_port");
     String device_wda = System.getProperty("_wda");
-//    =${_All_Test_Device_UDID[i]} -D_port=${_appium_port_array[i]} -D_wda=${_wda_port_array[i]}
 
     String serverUrl;
 
+    /**
+     * Appium Driver is Instantiated here
+     */
     public static AppiumDriver<MobileElement> driver;
 
-    @Before
+    //    @Before
     public void setUpDevice(){
-        System.out.println("I am Runner.......");
+        System.setProperty("DeviceName","Android"); //ToDo paramaterize this form CLI or script
 
-        System.setProperty("DeviceName","Android");
         String devicePlatformName = System.getProperty("DeviceName");
 
         //        http://appium.io/docs/en/writing-running-appium/caps/
-        System.out.println("Setting capabalities for Device.......");
+        System.out.println("Setting capabalities for Device >>> " + devicePlatformName );
 
         if (devicePlatformName.equalsIgnoreCase("ANDROID")){
             javaUtilsObject.printThis("We are Running this test for an Android device");
             caps.setCapability("platformName", "android"); //Which mobile OS platform to use
             caps.setCapability("noReset",true);
 //                    caps.setCapability("bundleId", "com.qantas.assure.UAT");
-                    caps.setCapability("appWaitDuration",20000);
+            caps.setCapability("appWaitDuration",20000);
             caps.setCapability("skipServerInstallation",true);
             // caps.setCapability("autoLaunch",false);
-                    caps.setCapability("uiautomator2ServerLaunchTimeout",20000);
-                    caps.setCapability("uiautomator2ServerInstallTimeout",20000);
+            caps.setCapability("uiautomator2ServerLaunchTimeout",20000);
+            caps.setCapability("uiautomator2ServerInstallTimeout",20000);
             caps.setCapability("platformVersion", "9"); // Mobile OS version
             caps.setCapability("deviceName","test Device"); //The kind of mobile device or emulator to use
             caps.setCapability("automationName","UiAutomator2");
@@ -87,15 +86,15 @@ public class SetUpDeviceAndCapabilities {
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
             caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
             caps.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 500000);
-            caps.setCapability(MobileCapabilityType.APP, iosApp);
+            caps.setCapability(MobileCapabilityType.APP, iosAppIpa);
         }
     }
 
     /*
-    *   Stop Appium Server Programmatically before each scenario
-    */
-    @After
+     *   Stop Appium Server Programmatically before each scenario
+     */
+   /* @After
     public void stopServer() {
         driver.quit();
-    }
+    }*/
 }

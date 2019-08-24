@@ -2,6 +2,8 @@
 target/
 .idea/
 
+todo.txt
+
 
 # Compiled class file
 *.class

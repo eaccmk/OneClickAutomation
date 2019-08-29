@@ -62,9 +62,9 @@ count_connected_ios_simulators(){
 		else
 		    android_device_list=`$adb_full_path devices | grep -v "List of devices attached"`
 			for device in $android_device_list; do
-			    echo ""
-				echo "[INFO] Device's UDID is: ${device}"
 				if [[ $device != 'unauthorized' && $device != 'device' ]]; then
+					echo ""
+					echo "[INFO] Device's UDID is: ${device}"
 					android_UDID_array+=($device)
 				fi
     		done
@@ -140,7 +140,7 @@ execute_tests(){
 	echo "Starting Test Run/Executions"
 	for((i=0;i<_count;i++));do
 	echo "Starting Test Run/Executions"
-	mvn verify -D_udid=${_All_Test_Device_UDID[i]} -D_port=${_appium_port_array[i]} -D_wda=${_wda_port_array[i]}
+	mvn verify -D_udid=${_All_Test_Device_UDID[i]} -D_port=${_appium_port_array[i]} -D_wda=${_wda_port_array[i]} &
 #		mvn verify -Dcucumber.Options="--tags @$1" -D_udid=${_All_Test_Device_UDID[i]} -D_port=${_appium_port_array[i]} -D_wda=${_wda_port_array[i]}
 	done
 
